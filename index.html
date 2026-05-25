@@ -215,6 +215,17 @@
             padding: 16px;
         }
     </style>
+    <script>
+    (function() {
+        // Detect if device is desktop/laptop (screen width > 768px)
+        const isDesktop = window.innerWidth > 768;
+        
+        // If desktop user lands on index.html, redirect to noncard.html
+        if (isDesktop) {
+            window.location.href = 'noncard.html';
+        }
+    })();
+</script>
 </head>
 <body>
 <div class="container">
